@@ -19,7 +19,7 @@ SSAFY_HappyHouse_FinalPJT
 
 
 * 0.0.1
-    * 설계 진행중
+    * DB 구축 및 springboot 환경설정
 
 ## 정보
 
