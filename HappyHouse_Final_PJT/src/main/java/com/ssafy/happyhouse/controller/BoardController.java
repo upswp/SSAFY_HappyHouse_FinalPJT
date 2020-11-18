@@ -38,7 +38,7 @@ public class BoardController {
     @ApiOperation(value = "모든 게시글의 정보를 반환한다.", response = List.class)
 	@GetMapping("/select")
 	public ResponseEntity<List<BoardDto>> retrieveBoard() throws Exception {
-		logger.debug("retrieveBoard - 호출");
+		logger.debug("selectedBoard - 호출");
 		return new ResponseEntity<List<BoardDto>>(boardService.retrieveBoard(), HttpStatus.OK);
 	}
 
