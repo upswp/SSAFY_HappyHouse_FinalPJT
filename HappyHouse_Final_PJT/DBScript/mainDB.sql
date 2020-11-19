@@ -4,6 +4,10 @@
 -- ------------------------------------------------------
 -- Server version	8.0.21
 
+-- create database happyhousefinal;
+
+use happyhousefinal;
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -48,6 +52,7 @@ DROP TABLE IF EXISTS `member`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `member` (
+  `userno` int NOT NULL,
   `userid` int NOT NULL,
   `username` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
