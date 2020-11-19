@@ -12,14 +12,25 @@ SSAFY_HappyHouse_FinalPJT
 |환경|버전|설명|
 |:---:|:---:|:---:|
 |JAVA |zulu8.48.0.49-ca-jdk8.0.262 |---|
-|SpringBoot |2.3.5|---|
+|Vutify |---|---|
 |MySQL|8.0.21|---|
+|mybatis|2.1.3|---|
+
+|axios|0.21.0|---|
+|core-js|3.6.5|---|
+|vue|2.6.12|---|
+|vue-router|3.2.0|---|
+|vuex|3.4.0|---|
+|jjwt|0.9.1|로그인을 위한 jwt사용|
+|swagger|2.9.2|---|
 
 ## 업데이트 내역
 
 
-* 0.0.1
+* 2020-11-18
     * DB 구축 및 springboot 환경설정
+* 2020-11-19
+    * springboot 로그인, QnA, 공지사항 backend구축
 
 ## 정보
 
