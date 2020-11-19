@@ -15,7 +15,6 @@ SSAFY_HappyHouse_FinalPJT
 |Vutify |---|---|
 |MySQL|8.0.21|---|
 |mybatis|2.1.3|---|
-
 |axios|0.21.0|---|
 |core-js|3.6.5|---|
 |vue|2.6.12|---|
