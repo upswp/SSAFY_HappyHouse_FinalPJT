@@ -30,6 +30,8 @@ SSAFY_HappyHouse_FinalPJT
     * DB 구축 및 springboot 환경설정
 * 2020-11-19
     * springboot 로그인, QnA, 공지사항 backend구축
+* 2020-11-19
+    * Vue Bootstrap->Vuetify로 변경
 
 ## 정보
 
