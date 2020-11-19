@@ -10,7 +10,6 @@ public class QnaBoardDto {
 	private int comment_count;
 	private Date regtime;
 	private int  comment_no;
-	
 	public int getNo() {
 		return no;
 	}
@@ -47,19 +46,14 @@ public class QnaBoardDto {
 	public void setRegtime(Date regtime) {
 		this.regtime = regtime;
 	}
-	public int getCommnet_no() {
+	public int getComment_no() {
 		return comment_no;
 	}
-	public void setCommnet_no(int commnet_no) {
+	public void setComment_no(int comment_no) {
 		this.comment_no = comment_no;
 	}
-	@Override
-	public String toString() {
-		return "BoardDto [no=" + no + ", writer=" + writer + ", title=" + title + ", content=" + content
-				+ ", comment_count=" + comment_count + ", regtime=" + regtime + ", commnet_no=" + comment_no + "]";
-	}
 	public QnaBoardDto(int no, String writer, String title, String content, int comment_count, Date regtime,
-			int commnet_no) {
+			int comment_no) {
 		super();
 		this.no = no;
 		this.writer = writer;
@@ -69,8 +63,10 @@ public class QnaBoardDto {
 		this.regtime = regtime;
 		this.comment_no = comment_no;
 	}
-	
-	
-	
+	@Override
+	public String toString() {
+		return "QnaBoardDto [no=" + no + ", writer=" + writer + ", title=" + title + ", content=" + content
+				+ ", comment_count=" + comment_count + ", regtime=" + regtime + ", comment_no=" + comment_no + "]";
+	}
 	
 }	
