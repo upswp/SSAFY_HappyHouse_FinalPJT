@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ssafy.happyhouse.dto.BoardDto;
-import com.ssafy.happyhouse.service.BoardService;
+import com.ssafy.happyhouse.dto.QnaBoardDto;
+import com.ssafy.happyhouse.service.QnaBoardService;
 
 import io.swagger.annotations.ApiOperation;
 
@@ -26,32 +26,32 @@ import io.swagger.annotations.ApiOperation;
 @CrossOrigin(origins = { "*" }, maxAge = 6000)
 @RestController
 @RequestMapping("/api/board")
-public class BoardController {
+public class QnaBoardController {
 
-	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
+	private static final Logger logger = LoggerFactory.getLogger(QnaBoardController.class);
 	private static final String SUCCESS = "success";
 	private static final String FAIL = "fail";
 
 	@Autowired
-	private BoardService boardService;
+	private QnaBoardService boardService;
 
     @ApiOperation(value = "모든 게시글의 정보를 반환한다.", response = List.class)
 	@GetMapping("/select")
-	public ResponseEntity<List<BoardDto>> retrieveBoard() throws Exception {
+	public ResponseEntity<List<QnaBoardDto>> retrieveBoard() throws Exception {
 		logger.debug("selectedBoard - 호출");
-		return new ResponseEntity<List<BoardDto>>(boardService.retrieveBoard(), HttpStatus.OK);
+		return new ResponseEntity<List<QnaBoardDto>>(boardService.retrieveBoard(), HttpStatus.OK);
 	}
 
-    @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 반환한다.", response = BoardDto.class)    
+    @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 반환한다.", response = QnaBoardDto.class)    
 	@GetMapping("/detail/{no}")
-	public ResponseEntity<BoardDto> detailBoard(@PathVariable int no) {
+	public ResponseEntity<QnaBoardDto> detailBoard(@PathVariable int no) {
 		logger.debug("detailBoard - 호출");
-		return new ResponseEntity<BoardDto>(boardService.detailBoard(no), HttpStatus.OK);
+		return new ResponseEntity<QnaBoardDto>(boardService.detailBoard(no), HttpStatus.OK);
 	}
 
     @ApiOperation(value = "새로운 게시글 정보를 입력한다. 그리고 DB입력 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
 	@PostMapping("/insertBoard")
-	public ResponseEntity<String> writeBoard(@RequestBody BoardDto board) {
+	public ResponseEntity<String> writeBoard(@RequestBody QnaBoardDto board) {
 		logger.debug("writeBoard - 호출");
 		if (boardService.writeBoard(board)) {
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
@@ -61,7 +61,7 @@ public class BoardController {
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 수정한다. 그리고 DB수정 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
 	@PutMapping("/update/{no}")
-	public ResponseEntity<String> updateBoard(@RequestBody BoardDto board) {
+	public ResponseEntity<String> updateBoard(@RequestBody QnaBoardDto board) {
 		logger.debug("updateBoard - 호출");
 		logger.debug("" + board);
 		
