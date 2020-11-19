@@ -25,7 +25,7 @@ import io.swagger.annotations.ApiOperation;
 //http://localhost:9999/vue/swagger-ui.html
 @CrossOrigin(origins = { "*" }, maxAge = 6000)
 @RestController
-@RequestMapping("/api/board")
+@RequestMapping("/api/noticeboard")
 public class NoticeBoardController {
 
 	private static final Logger logger = LoggerFactory.getLogger(NoticeBoardController.class);
