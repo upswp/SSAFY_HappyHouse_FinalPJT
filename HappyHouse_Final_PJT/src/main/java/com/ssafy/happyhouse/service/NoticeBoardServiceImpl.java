@@ -6,33 +6,34 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ssafy.happyhouse.dao.QnaBoardDao;
-import com.ssafy.happyhouse.dto.QnaBoardDto;
+import com.ssafy.happyhouse.dao.NoticeBoardDao;
+import com.ssafy.happyhouse.dto.NoticeBoardDto;
+
 
 @Service
-public class NoticeBoardServiceImpl implements QnaBoardService {
+public class NoticeBoardServiceImpl implements NoticeBoardService {
 	
     @Autowired
-	private QnaBoardDao boardDao;
+	private NoticeBoardDao boardDao;
 
     @Override
-	public List<QnaBoardDto> retrieveBoard() {
+	public List<NoticeBoardDto> retrieveBoard() {
 		return boardDao.selectBoard();
 	}
     
   	@Override
-	public boolean writeBoard(QnaBoardDto board) {
+	public boolean writeBoard(NoticeBoardDto board) {
 		return boardDao.insertBoard(board) == 1;
 	}
 
 	@Override
-	public QnaBoardDto detailBoard(int no) {
+	public NoticeBoardDto detailBoard(int no) {
 		return boardDao.selectBoardByNo(no);
 	}
 
 	@Override
 	@Transactional
-	public boolean updateBoard(QnaBoardDto board) {
+	public boolean updateBoard(NoticeBoardDto board) {
 		return boardDao.updateBoard(board) == 1;
 	}
 
