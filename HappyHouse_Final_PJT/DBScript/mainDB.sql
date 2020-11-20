@@ -53,7 +53,7 @@ DROP TABLE IF EXISTS `member`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `member` (
   `userno` int NOT NULL,
-  `userid` int NOT NULL,
+  `userid` varchar(45) NOT NULL,
   `username` varchar(45) NOT NULL,
   `email` varchar(45) NOT NULL,
   `userpwd` varchar(45) NOT NULL,
@@ -64,6 +64,10 @@ CREATE TABLE `member` (
   PRIMARY KEY (`userid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+insert into member (userno,userid,username,email,userpwd,address,birth_date,interest_area,marriage_type)
+values(1,"ssafy","오현정","tkddnsos@gmail.com","ssafy","서울","1993-08-27","서울","미혼");
+
 
 --
 -- Dumping data for table `member`
