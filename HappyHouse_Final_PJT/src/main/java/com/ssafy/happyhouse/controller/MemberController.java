@@ -26,7 +26,7 @@ import com.ssafy.happyhouse.service.MemberService;
 
 @CrossOrigin(origins = { "*" }, maxAge = 6000)
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/api/user")
 public class MemberController {
 
 	@Autowired
