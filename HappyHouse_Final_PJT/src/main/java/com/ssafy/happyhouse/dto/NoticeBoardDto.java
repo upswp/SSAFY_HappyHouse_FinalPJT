@@ -1,14 +1,12 @@
 package com.ssafy.happyhouse.dto;
 
-import java.util.Date;
-
 public class NoticeBoardDto {
 	private int no;
 	private String title;
 	private String content;
 	private String writer;
 	private int views;
-	private Date regtime;
+	private String regtime;
 	public int getNo() {
 		return no;
 	}
@@ -39,19 +37,10 @@ public class NoticeBoardDto {
 	public void setViews(int views) {
 		this.views = views;
 	}
-	public Date getRegtime() {
+	public String getRegtime() {
 		return regtime;
 	}
-	public void setRegtime(Date regtime) {
-		this.regtime = regtime;
-	}
-	public NoticeBoardDto(int no, String title, String content, String writer, int views, Date regtime) {
-		super();
-		this.no = no;
-		this.title = title;
-		this.content = content;
-		this.writer = writer;
-		this.views = views;
+	public void setRegtime(String regtime) {
 		this.regtime = regtime;
 	}
 	@Override

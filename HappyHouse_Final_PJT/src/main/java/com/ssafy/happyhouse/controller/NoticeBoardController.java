@@ -52,7 +52,7 @@ public class NoticeBoardController {
     @ApiOperation(value = "새로운 게시글 정보를 입력한다. 그리고 DB입력 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
 	@PostMapping("/insertBoard")
 	public ResponseEntity<String> writeBoard(@RequestBody NoticeBoardDto board) {
-		logger.debug("writeBoard - 호출");
+		logger.debug("writeBoard - 호출"+board);
 		if (boardService.writeBoard(board)) {
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		}
