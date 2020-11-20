@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.happyhouse.dao.HouseMapMapper">
+
+	<select id="selectSido" resultType="sidoguguncodedto">
+		select left(sido_code,2) sidoCode, sido_name sidoName
+		from sidocode
+		order by sidoCode;
+	</select>
+	
+	<select id="selectGugun" parameterType="String" resultType="sidoguguncodedto">
+		select left(gugun_code,5) gugunCode, gugun_name gugunName
+		from guguncode
+		where left(gugun_code,2) = #{sidoCode}
+		order by gugunCode;
+	</select>
+</mapper>
