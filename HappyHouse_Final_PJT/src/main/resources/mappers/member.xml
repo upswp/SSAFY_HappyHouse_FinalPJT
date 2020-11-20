@@ -2,12 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.ssafy.happyhouse.dao.MemberMapper">
+<mapper namespace="com.ssafy.happyhouse.mapper.MemberMapper">
 
 	<select id="login" parameterType="MemberDto"
 		resultType="MemberDto">
-		select username, userid, email, address, joindate,
-		birth_date,interest_area,marriage_type
+		select username, userid
 		from member
 		where userid =
 		#{userid} and userpwd = #{userpwd}
