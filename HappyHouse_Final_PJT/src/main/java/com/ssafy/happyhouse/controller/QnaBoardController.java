@@ -22,7 +22,7 @@ import com.ssafy.happyhouse.service.QnaBoardService;
 
 import io.swagger.annotations.ApiOperation;
 
-//http://localhost:9999/vue/swagger-ui.html
+//http://localhost:9999/happyhouse/swagger-ui.html
 @CrossOrigin(origins = { "*" }, maxAge = 6000)
 @RestController
 @RequestMapping("/api/qnaboard")

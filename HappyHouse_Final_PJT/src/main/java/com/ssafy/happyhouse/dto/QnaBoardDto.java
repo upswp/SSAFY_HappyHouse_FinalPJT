@@ -52,17 +52,6 @@ public class QnaBoardDto {
 	public void setComment_no(int comment_no) {
 		this.comment_no = comment_no;
 	}
-	public QnaBoardDto(int no, String writer, String title, String content, int comment_count, Date regtime,
-			int comment_no) {
-		super();
-		this.no = no;
-		this.writer = writer;
-		this.title = title;
-		this.content = content;
-		this.comment_count = comment_count;
-		this.regtime = regtime;
-		this.comment_no = comment_no;
-	}
 	@Override
 	public String toString() {
 		return "QnaBoardDto [no=" + no + ", writer=" + writer + ", title=" + title + ", content=" + content
