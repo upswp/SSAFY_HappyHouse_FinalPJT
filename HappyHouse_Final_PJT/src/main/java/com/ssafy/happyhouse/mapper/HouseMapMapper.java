@@ -10,5 +10,4 @@ public interface HouseMapMapper {
 	public List<SidoGugunCodeDto> selectGugun(String sido);
 	public List<SidoGugunCodeDto> selectDong(String gugun);
 	
-	//수정했다고 바뀌라고!!!!!!!!
 }
