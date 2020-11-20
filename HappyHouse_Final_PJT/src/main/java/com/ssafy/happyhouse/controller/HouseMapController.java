@@ -44,4 +44,10 @@ public class HouseMapController {
 		return housemapService.getGugunInSido(sido);
 	}
 	
+	@ApiOperation(value = "선택한 구군코드로 동을 반환한다.", response = List.class)
+	@RequestMapping(value = "/sido/gugun/{gugunCode}", method = RequestMethod.GET, headers = { "Content-type=application/json" })
+	public List<SidoGugunCodeDto> getDongInGugun(@PathVariable("gugunCode") String gugun) throws Exception {
+		return housemapService.getDongInGugun(gugun);
+	}
+	
 }

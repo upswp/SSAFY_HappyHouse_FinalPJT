@@ -18,4 +18,12 @@ public interface HouseMapService {
 	 * @throws Exception
 	 */
 	List<SidoGugunCodeDto> getGugunInSido(String sido);
+	/**
+	 * 구군 리스트 반환
+	 * @param sido
+	 * @return
+	 * @throws Exception
+	 */
+	List<SidoGugunCodeDto> getDongInGugun(String gugun);
+
 }
