@@ -1,4 +1,4 @@
-package com.ssafy.happyhouse.dao;
+package com.ssafy.happyhouse.mapper;
 
 import java.sql.SQLException;
 

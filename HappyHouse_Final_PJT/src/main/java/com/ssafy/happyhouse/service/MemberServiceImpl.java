@@ -4,8 +4,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ssafy.happyhouse.dao.MemberMapper;
 import com.ssafy.happyhouse.dto.MemberDto;
+import com.ssafy.happyhouse.mapper.MemberMapper;
 
 
 @Service

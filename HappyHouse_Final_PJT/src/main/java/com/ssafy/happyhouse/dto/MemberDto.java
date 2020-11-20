@@ -3,7 +3,7 @@ package com.ssafy.happyhouse.dto;
 import java.sql.Date;
 
 public class MemberDto {
-	private String userno;
+	private int userno;
 	private String userid;
 	private String username;
 	private String userpwd;
@@ -12,7 +12,7 @@ public class MemberDto {
 	private Date birth_date;
 	private String interest_area;
 	private String marriage_type;
-	public MemberDto(String userno, String userid, String username, String userpwd, String email, String address,
+	public MemberDto(int userno, String userid, String username, String userpwd, String email, String address,
 			Date birth_date, String interest_area, String marriage_type) {
 		super();
 		this.userno = userno;
@@ -25,10 +25,10 @@ public class MemberDto {
 		this.interest_area = interest_area;
 		this.marriage_type = marriage_type;
 	}
-	public String getUserno() {
+	public int getUserno() {
 		return userno;
 	}
-	public void setUserno(String userno) {
+	public void setUserno(int userno) {
 		this.userno = userno;
 	}
 	public String getUserid() {
@@ -81,10 +81,10 @@ public class MemberDto {
 	}
 	@Override
 	public String toString() {
-		return "MemberDto [userid=" + userid + ", username=" + username + ", birth_date=" + birth_date
-				+ ", interest_area=" + interest_area + ", marriage_type=" + marriage_type + "]";
+		return "MemberDto [userno=" + userno + ", userid=" + userid + ", username=" + username + ", userpwd=" + userpwd
+				+ ", email=" + email + ", address=" + address + ", birth_date=" + birth_date + ", interest_area="
+				+ interest_area + ", marriage_type=" + marriage_type + "]";
 	}
-	
-	
 
+	
 }
