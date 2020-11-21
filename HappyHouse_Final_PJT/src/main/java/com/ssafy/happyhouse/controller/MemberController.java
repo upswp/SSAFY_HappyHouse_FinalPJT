@@ -40,6 +40,7 @@ public class MemberController {
 	@PostMapping("/confirm/login")
 	public ResponseEntity<Map<String, Object>> login(@RequestBody MemberDto memberDto, HttpServletResponse response, HttpSession session) {
 		Map<String, Object> resultMap = new HashMap<>();
+		System.out.println("USERID::::"+memberDto.getUserid());
 		HttpStatus status = null;
 		try {
 			MemberDto loginUser = memberService.login(memberDto);
