@@ -98,6 +98,7 @@ public class MemberController {
 	public ResponseEntity<Map<String, Object>> getInfo(HttpServletRequest req) {
 		Map<String, Object> resultMap = new HashMap<>();
 		HttpStatus status = HttpStatus.ACCEPTED;
+		System.out.println(req.getHeader("auth-token"));
 		System.out.println(">>>>>> " + jwtService.get(req.getHeader("auth-token")));
 		try {
 			// 사용자에게 전달할 정보이다.
