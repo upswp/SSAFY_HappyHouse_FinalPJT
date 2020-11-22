@@ -24,8 +24,8 @@ public class HappyHouseFinalPjtApplication implements WebMvcConfigurer{
 	@Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(jwtInterceptor).addPathPatterns("/api/user/**") // 기본 적용 경로
-                .excludePathPatterns(Arrays.asList("/api/user/confirm/**", "/api/noticeboard/list"));// 적용 제외 경로
-        //		  .excludePathPatterns(Arrays.asList("/**"));// 적용 제외 경로
+         //       .excludePathPatterns(Arrays.asList("/api/user/confirm/**", "/api/noticeboard/list"));// 적용 제외 경로
+        		  .excludePathPatterns(Arrays.asList("/**"));// 적용 제외 경로
     }
 
 //  Interceptor를 이용해서 처리하므로 전역의 Corss Origin 처리를 해준다.
