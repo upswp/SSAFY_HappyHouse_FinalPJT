@@ -26,6 +26,7 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/api/aptaround")
 public class AptAroundController {
 	// 아파트 주변환경정보
+	
 	private static final Logger logger = LoggerFactory.getLogger(AptAroundController.class);
 	private static final String SUCCESS = "success";
 	private static final String FAIL = "fail";
