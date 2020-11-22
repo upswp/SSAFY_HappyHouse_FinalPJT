@@ -6,7 +6,7 @@
 
 	<select id="login" parameterType="MemberDto"
 		resultType="MemberDto">
-		select username, userid
+		select userid
 		from member
 		where userid =
 		#{userid} and userpwd = #{userpwd}

@@ -12,19 +12,7 @@ public class MemberDto {
 	private Date birth_date;
 	private String interest_area;
 	private String marriage_type;
-	public MemberDto(int userno, String userid, String username, String userpwd, String email, String address,
-			Date birth_date, String interest_area, String marriage_type) {
-		super();
-		this.userno = userno;
-		this.userid = userid;
-		this.username = username;
-		this.userpwd = userpwd;
-		this.email = email;
-		this.address = address;
-		this.birth_date = birth_date;
-		this.interest_area = interest_area;
-		this.marriage_type = marriage_type;
-	}
+	
 	public int getUserno() {
 		return userno;
 	}
