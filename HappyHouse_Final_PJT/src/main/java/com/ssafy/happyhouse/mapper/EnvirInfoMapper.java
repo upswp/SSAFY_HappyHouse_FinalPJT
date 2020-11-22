@@ -9,5 +9,5 @@ import com.ssafy.happyhouse.dto.EnvirInfoDto;
 
 @Mapper
 public interface EnvirInfoMapper {
-	public List<EnvirInfoDto> selectEnvInfoByDong(String sigugun, String dong);
+	public List<EnvirInfoDto> selectEnvInfoByDong(String sidogugun, String dong);
 }

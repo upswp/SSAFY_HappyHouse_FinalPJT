@@ -12,5 +12,8 @@ public interface HouseMapMapper {
 	public List<SidoGugunCodeDto> selectSido();
 	public List<SidoGugunCodeDto> selectGugun(String sido);
 	public List<SidoGugunCodeDto> selectDong(String gugun);
+	public String selectSidoName(String sidocode);
+	public String selectGugunName(String guguncode);
+	public String selectDongName(String dongcode);
 	
 }

@@ -30,5 +30,20 @@ public class HouseMapServiceImpl implements HouseMapService {
 		return sidoguguncodedto.selectDong(gugun);
 	}
 
+	@Override
+	public String getSiName(String sidocode) {
+		return sidoguguncodedto.selectSidoName(sidocode);
+	}
+
+	@Override
+	public String getGugunName(String guguncode) {
+		return sidoguguncodedto.selectGugunName(guguncode);
+	}
+
+	@Override
+	public String getDongName(String dongcode) {
+		return sidoguguncodedto.selectDongName(dongcode);
+	}
+
 
 }

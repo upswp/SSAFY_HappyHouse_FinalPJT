@@ -34,8 +34,8 @@ public class AptAroundController {
 	private EnvirInfoService envirinfoService;
 	
 	@ApiOperation(value = "선택한 시구군,동으로 주변환경정보를 반환한다.", response = List.class)
-	@GetMapping(value = "/env")
-	public List<EnvirInfoDto> getGugunInSido(String sigugun, String dong) throws Exception {
-		return envirinfoService.getEnvirInfo(sigugun, dong);
+	@GetMapping(value = "/env/{sidogugun}/{dong}")
+	public List<EnvirInfoDto> getGugunInSido(@PathVariable("sidogugun") String sidogugun,@PathVariable("dong") String dong) throws Exception {
+		return envirinfoService.getEnvirInfo(sidogugun, dong);
 	}
 }

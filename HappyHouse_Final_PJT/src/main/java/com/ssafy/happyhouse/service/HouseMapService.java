@@ -25,5 +25,8 @@ public interface HouseMapService {
 	 * @throws Exception
 	 */
 	List<SidoGugunCodeDto> getDongInGugun(String gugun);
+	String getSiName(String sidocode);
+	String getGugunName(String guguncode);
+	String getDongName(String dongcode);
 
 }

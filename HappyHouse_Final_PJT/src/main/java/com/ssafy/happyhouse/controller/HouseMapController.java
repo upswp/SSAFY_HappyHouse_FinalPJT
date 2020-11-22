@@ -50,4 +50,22 @@ public class HouseMapController {
 		return housemapService.getDongInGugun(gugun);
 	}
 	
+	@ApiOperation(value = "선택한 시코드로 시이름을 반환한다.", response = List.class)
+	@GetMapping(value = "/getSiName/{sidoCode}")
+	public String getSiName(@PathVariable("sidoCode") String sidocode) throws Exception {
+		return housemapService.getSiName(sidocode);
+	}
+	
+	@ApiOperation(value = "선택한 구군코드로 구이름을 반환한다.", response = List.class)
+	@GetMapping(value = "/getGugunName/{gugunCode}")
+	public String getGugunName(@PathVariable("gugunCode") String guguncode) throws Exception {
+		return housemapService.getGugunName(guguncode);
+	}
+	
+	@ApiOperation(value = "선택한 동코드로 동이름을 반환한다.", response = List.class)
+	@GetMapping(value = "/getDongName/{dongCode}")
+	public String getDongName(@PathVariable("dongCode") String dongcode) throws Exception {
+		return housemapService.getDongName(dongcode);
+	}
+	
 }

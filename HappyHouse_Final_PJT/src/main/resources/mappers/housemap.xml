@@ -23,4 +23,21 @@
 		where left(dongcode,5) = #{gugunCode}
 		order by dongCode;
 	</select>
+	
+	<select id="selectSidoName" parameterType="String" resultType="String">
+		select sido_name sidoName
+		from sidocode
+		where left(sido_code,2) = #{selectSido}
+	</select>
+	
+	<select id="selectGugunName" parameterType="String" resultType="String">
+		select gugun_name gugunName
+		from guguncode
+		where left(gugun_code,5) = #{selectGugun}
+	</select>
+	<select id="selectDongName" parameterType="String" resultType="String">
+		select dong dongName
+		from dongcode
+		where right(dongcode,5) = #{selectDong}
+	</select>
 </mapper>
