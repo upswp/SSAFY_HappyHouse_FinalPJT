@@ -65,10 +65,15 @@ CREATE TABLE `member` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+-- 관리자 :1 일반사용자: 2 공인중개사 : 3
+
 insert into member (userno,userid,username,email,userpwd,address,birth_date,interest_area,marriage_type)
-values(1,"ssafy","오현정","tkddnsos@gmail.com","ssafy","서울","1993-08-27","서울","미혼");
+values(1,"admin","관리자","superuser@gmail.com","admin","서울","1993-08-27","서울","미혼");
 
+insert into member (userno,userid,username,email,userpwd,address,birth_date,interest_area,marriage_type)
+values(2,"ssafy","오현정","tkddnsos@gmail.com","ssafy","서울","1993-08-27","서울","미혼");
 
+select * from member;
 --
 -- Dumping data for table `member`
 --
@@ -96,6 +101,14 @@ CREATE TABLE `notice_board` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+
+insert into notice_board(
+			title, writer, content, regtime
+		) values (
+			'hello','ssafy' , 'hellohhello', now() 
+		);
+        
+select  * from notice_board;
 --
 -- Dumping data for table `notice_board`
 --
@@ -124,6 +137,11 @@ CREATE TABLE `qna_board` (
   KEY `commentno_idx` (`comment_no`),
   CONSTRAINT `commentno` FOREIGN KEY (`comment_no`) REFERENCES `comment` (`commentno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+select * from qna_board;
+
+
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
