@@ -56,11 +56,11 @@ public class MemberController {
 				resultMap.put("auth-token", token);
 				resultMap.put("user-id", loginUser.getUserid());
 				resultMap.put("user-name", loginUser.getUsername());
-//				resultMap.put("status", true);
+				resultMap.put("status", true);
 //				resultMap.put("data", loginUser);
 				status = HttpStatus.ACCEPTED;
 			} else {
-				resultMap.put("message", "로그인 실패");
+				resultMap.put("status", false);
 				status = HttpStatus.ACCEPTED;
 			}
 		} catch (Exception e) {
