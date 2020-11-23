@@ -36,21 +36,21 @@ public class QnaBoardController {
 	private QnaBoardService boardService;
 
     @ApiOperation(value = "모든 게시글의 정보를 반환한다.", response = List.class)
-	@GetMapping("/select")
+	@GetMapping("/qselect")
 	public ResponseEntity<List<QnaBoardDto>> retrieveBoard() throws Exception {
 		logger.debug("selectedBoard - 호출");
 		return new ResponseEntity<List<QnaBoardDto>>(boardService.retrieveBoard(), HttpStatus.OK);
 	}
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 반환한다.", response = QnaBoardDto.class)    
-	@GetMapping("/detail/{no}")
+	@GetMapping("/qdetail/{no}")
 	public ResponseEntity<QnaBoardDto> detailBoard(@PathVariable int no) {
 		logger.debug("detailBoard - 호출");
 		return new ResponseEntity<QnaBoardDto>(boardService.detailBoard(no), HttpStatus.OK);
 	}
 
     @ApiOperation(value = "새로운 게시글 정보를 입력한다. 그리고 DB입력 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-	@PostMapping("/insertBoard")
+	@PostMapping("/qinsertBoard")
 	public ResponseEntity<String> writeBoard(@RequestBody QnaBoardDto board) {
 		logger.debug("writeBoard - 호출");
 		if (boardService.writeBoard(board)) {
@@ -60,7 +60,7 @@ public class QnaBoardController {
 	}
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 수정한다. 그리고 DB수정 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-	@PutMapping("/update/{no}")
+	@PutMapping("/qupdate/{no}")
 	public ResponseEntity<String> updateBoard(@RequestBody QnaBoardDto board) {
 		logger.debug("updateBoard - 호출");
 		logger.debug("" + board);
@@ -72,7 +72,7 @@ public class QnaBoardController {
 	}
 
     @ApiOperation(value = "글번호에 해당하는 게시글의 정보를 삭제한다. 그리고 DB삭제 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
-	@DeleteMapping("/delete/{no}")
+	@DeleteMapping("/qdelete/{no}")
 	public ResponseEntity<String> deleteBoard(@PathVariable int no) {
 		logger.debug("deleteBoard - 호출");
 		if (boardService.deleteBoard(no)) {
