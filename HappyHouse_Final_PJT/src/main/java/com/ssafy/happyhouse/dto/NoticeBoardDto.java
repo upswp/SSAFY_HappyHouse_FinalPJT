@@ -1,11 +1,17 @@
 package com.ssafy.happyhouse.dto;
 
 public class NoticeBoardDto {
+	/*공지사항 글 no*/
 	private int no;
+	/*공지사항 글 이름*/
 	private String title;
+	/*공지사항 글 내용*/
 	private String content;
+	/*공지사항 글 작성자*/
 	private String writer;
+	/*공지사항 글 열럼횟수*/
 	private int views;
+	/*공지사항 글 등록일*/
 	private String regtime;
 	public int getNo() {
 		return no;

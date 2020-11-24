@@ -3,14 +3,23 @@ package com.ssafy.happyhouse.dto;
 import java.sql.Date;
 
 public class MemberDto {
+	/*사용자 권한에 맞는 no*/
 	private int userno;
+	/*사용자 id*/
 	private String userid;
+	/*사용자 이름*/
 	private String username;
+	/*사용자 비밀번호*/
 	private String userpwd;
+	/*사용자 이메일*/
 	private String email;
+	/*사용자 주소*/
 	private String address;
+	/*사용자 생년월일*/
 	private Date birth_date;
+	/*사용자 관심 지역*/
 	private String interest_area;
+	/*사용자 결혼 여부*/
 	private String marriage_type;
 	
 	public int getUserno() {

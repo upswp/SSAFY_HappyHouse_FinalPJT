@@ -3,13 +3,21 @@ package com.ssafy.happyhouse.dto;
 import java.util.Date;
 
 public class QnaBoardDto {
+	/*QnA 글 no*/
 	private int no;
+	/*QnA 글 작성자*/
 	private String writer;
+	/*QnA 글 제목*/
 	private String title;
+	/*QnA 글 내용*/
 	private String content;
+	/*QnA 글 댓글 갯수*/
 	private int comment_count;
+	/*QnA 글 등록일*/
 	private Date regtime;
+	/*QnA 댓글 no*/
 	private int  comment_no;
+	
 	public int getNo() {
 		return no;
 	}
