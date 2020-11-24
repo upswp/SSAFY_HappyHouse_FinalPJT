@@ -1,7 +1,5 @@
 package com.ssafy.happyhouse.dto;
 
-import java.sql.Date;
-
 public class MemberDto {
 	/*사용자 권한에 맞는 no*/
 	private int userno;
@@ -16,13 +14,17 @@ public class MemberDto {
 	/*사용자 주소*/
 	private String address;
 	/*사용자 생년월일*/
-	private Date birth_date;
+	private String yy;
+	private String mm;
+	private String dd;
 	/*사용자 관심 지역*/
 	private String interest_area;
 	/*사용자 결혼 여부*/
 	private String marriage_type;
 	/*사용자 고유 번호 no*/
 	private int no;
+	
+	
 	public int getUserno() {
 		return userno;
 	}
@@ -59,11 +61,23 @@ public class MemberDto {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public Date getBirth_date() {
-		return birth_date;
+	public String getYy() {
+		return yy;
 	}
-	public void setBirth_date(Date birth_date) {
-		this.birth_date = birth_date;
+	public void setYy(String yy) {
+		this.yy = yy;
+	}
+	public String getMm() {
+		return mm;
+	}
+	public void setMm(String mm) {
+		this.mm = mm;
+	}
+	public String getDd() {
+		return dd;
+	}
+	public void setDd(String dd) {
+		this.dd = dd;
 	}
 	public String getInterest_area() {
 		return interest_area;
@@ -83,12 +97,14 @@ public class MemberDto {
 	public void setNo(int no) {
 		this.no = no;
 	}
-	
 	@Override
 	public String toString() {
 		return "MemberDto [userno=" + userno + ", userid=" + userid + ", username=" + username + ", userpwd=" + userpwd
-				+ ", email=" + email + ", address=" + address + ", birth_date=" + birth_date + ", interest_area="
-				+ interest_area + ", marriage_type=" + marriage_type + ", no=" + no + "]";
+				+ ", email=" + email + ", address=" + address + ", yy=" + yy + ", mm=" + mm + ", dd=" + dd
+				+ ", interest_area=" + interest_area + ", marriage_type=" + marriage_type + ", no=" + no + "]";
 	}
+
+	
+	
 	
 }
