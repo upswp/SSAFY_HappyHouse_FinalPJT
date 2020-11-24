@@ -58,7 +58,9 @@ CREATE TABLE `member` (
   `email` varchar(45) NOT NULL,
   `userpwd` varchar(45) NOT NULL,
   `address` varchar(45) NOT NULL,
-  `birth_date` date DEFAULT NULL,
+  `yy` varchar(45) NOT NULL,
+  `mm` varchar(45) NOT NULL,
+  `dd` varchar(45) NOT NULL,
   `interest_area` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `marriage_type` varchar(45) DEFAULT NULL,
   `no` int NOT NULL AUTO_INCREMENT,
@@ -68,11 +70,10 @@ CREATE TABLE `member` (
 
 -- 관리자 :1 일반사용자: 2 공인중개사 : 3
 
-insert into member (userno,userid,username,email,userpwd,address,birth_date,interest_area,marriage_type)
-values(1,"admin","관리자","superuser@gmail.com","admin","서울","1993-08-27","서울","미혼");
+insert into member (userno,userid,username,email,userpwd,address,interest_area,marriage_type,yy,mm,dd)
+values(1,"admin","관리자","superuser@gmail.com","admin","서울","서울","미혼",1993,08,27);
 
-insert into member (userno,userid,username,email,userpwd,address,birth_date,interest_area,marriage_type)
-values(2,"ssafy","오현정","tkddnsos@gmail.com","ssafy","서울","1993-08-27","서울","미혼");
+
 
 select * from member;
 --
