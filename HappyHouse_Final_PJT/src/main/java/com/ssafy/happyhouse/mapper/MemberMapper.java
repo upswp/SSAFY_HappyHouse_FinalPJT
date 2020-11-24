@@ -11,9 +11,14 @@ import com.ssafy.happyhouse.dto.MemberDto;
 public interface MemberMapper {
 
 	public MemberDto login(MemberDto memberDto) throws SQLException;
-	public List<MemberDto> retrieveMember();
-	public MemberDto detailMember(int no);
-	public int joinMember(MemberDto memberDto);
-	public int updateMember(MemberDto memberDto);
-	public int deleteMember(int no);
+
+	public List<MemberDto> retrieveMember() throws SQLException;
+
+	public MemberDto detailMember(int no) throws SQLException;
+
+	public int joinMember(MemberDto memberDto) throws SQLException;
+
+	public int updateMember(MemberDto memberDto) throws SQLException;
+
+	public int deleteMember(int no) throws SQLException;
 }
