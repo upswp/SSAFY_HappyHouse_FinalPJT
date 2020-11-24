@@ -21,7 +21,8 @@ public class MemberDto {
 	private String interest_area;
 	/*사용자 결혼 여부*/
 	private String marriage_type;
-	
+	/*사용자 고유 번호 no*/
+	private int no;
 	public int getUserno() {
 		return userno;
 	}
@@ -76,12 +77,18 @@ public class MemberDto {
 	public void setMarriage_type(String marriage_type) {
 		this.marriage_type = marriage_type;
 	}
+	public int getNo() {
+		return no;
+	}
+	public void setNo(int no) {
+		this.no = no;
+	}
+	
 	@Override
 	public String toString() {
 		return "MemberDto [userno=" + userno + ", userid=" + userid + ", username=" + username + ", userpwd=" + userpwd
 				+ ", email=" + email + ", address=" + address + ", birth_date=" + birth_date + ", interest_area="
-				+ interest_area + ", marriage_type=" + marriage_type + "]";
+				+ interest_area + ", marriage_type=" + marriage_type + ", no=" + no + "]";
 	}
-
 	
 }
