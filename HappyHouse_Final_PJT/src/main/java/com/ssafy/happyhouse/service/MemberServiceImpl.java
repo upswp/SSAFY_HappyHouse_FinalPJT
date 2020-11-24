@@ -1,14 +1,15 @@
 package com.ssafy.happyhouse.service;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.ssafy.happyhouse.dto.MemberDto;
 import com.ssafy.happyhouse.mapper.MemberMapper;
-
 
 @Service
 public class MemberServiceImpl implements MemberService {
@@ -16,7 +17,7 @@ public class MemberServiceImpl implements MemberService {
 	@Autowired
 	private SqlSession sqlSession;
 	private MemberMapper memberMapper;
-	
+
 	@Override
 	public MemberDto login(MemberDto memberDto) throws Exception {
 		return sqlSession.getMapper(MemberMapper.class).login(memberDto);
@@ -28,28 +29,30 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public List<MemberDto> retrieveMember() {
-		return memberMapper.retrieveMember();
+	public List<MemberDto> retrieveMember() throws Exception {
+		return sqlSession.getMapper(MemberMapper.class).retrieveMember();
 	}
 
 	@Override
-	public MemberDto detailMember(int no) {
-		return memberMapper.detailMember(no);
+	public MemberDto detailMember(int no) throws Exception {
+		return sqlSession.getMapper(MemberMapper.class).detailMember(no);
 	}
 
 	@Override
-	public boolean joinMember(MemberDto memberDto) {
-		return memberMapper.joinMember(memberDto) == 1;
+	public boolean joinMember(MemberDto memberDto) throws Exception {
+		return sqlSession.getMapper(MemberMapper.class).joinMember(memberDto) == 1;
 	}
 
 	@Override
-	public boolean updateMember(MemberDto memberDto) {
-		return memberMapper.updateMember(memberDto) == 1;
+	@Transactional
+	public boolean updateMember(MemberDto memberDto) throws Exception {
+		return sqlSession.getMapper(MemberMapper.class).updateMember(memberDto) == 1;
 	}
 
 	@Override
-	public boolean deleteMember(int no) {
-		return memberMapper.deleteMember(no) == 1;
+	@Transactional
+	public boolean deleteMember(int no) throws Exception {
+		return sqlSession.getMapper(MemberMapper.class).deleteMember(no) == 1;
 	}
 
 }

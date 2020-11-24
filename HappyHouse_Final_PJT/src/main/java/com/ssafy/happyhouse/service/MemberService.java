@@ -7,11 +7,17 @@ import com.ssafy.happyhouse.dto.MemberDto;
 public interface MemberService {
 
 	public MemberDto login(MemberDto memberDto) throws Exception;
+
 	public String getServerInfo();
-	public List<MemberDto> retrieveMember();
-	public MemberDto detailMember(int no);
-	public boolean joinMember(MemberDto memberDto);
-	public boolean updateMember(MemberDto memberDto);
-	public boolean deleteMember(int no);
-	
+
+	public List<MemberDto> retrieveMember() throws Exception;
+
+	public MemberDto detailMember(int no) throws Exception;
+
+	public boolean joinMember(MemberDto memberDto) throws Exception;
+
+	public boolean updateMember(MemberDto memberDto) throws Exception;
+
+	public boolean deleteMember(int no) throws Exception;
+
 }
