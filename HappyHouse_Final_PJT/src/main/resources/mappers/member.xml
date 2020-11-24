@@ -29,10 +29,10 @@
 
 	<!-- 회원 등록 -->
 	<insert id="joinMember" parameterType="MemberDto">
-		insert into notice_board(
-			userid,username,userpwd,email,address,birth_date,interest_area,marriage_type
+		insert into member(
+			userid,username,userpwd,email,address,birth_date,interest_area,marriage_type,userno
 		) values (
-			#{userid}, #{username}, #{userpwd}, #{email},#{address},#{birth_date},#{interest_area},#{marriage_type},
+			#{userid}, #{username}, #{userpwd}, #{email},#{address},#{birth_date},#{interest_area},#{marriage_type},#{userno}
 		)
 	</insert>
 	
