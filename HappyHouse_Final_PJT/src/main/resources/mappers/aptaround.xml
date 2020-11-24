@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ssafy.happyhouse.mapper.EnvirInfoMapper">
+<mapper namespace="com.ssafy.happyhouse.mapper.AptAroundMapper">
 
 	<!-- 동으로 주변환경 정보조회 -->
 	<select id="selectEnvInfoByDong" parameterType="String" resultType="EnvirInfoDto">
@@ -12,5 +12,13 @@
 		and locaddr like CONCAT('%', #{dong}, '%');
 	</select>
 	
+	<!-- 동으로 주변상가 정보조회 -->
+	<select id="selectStoreInfoByDong" parameterType="String" resultType="StoreInfoDto">
+		select storeno, storename, branchname, bigname, midname, smallname, doroaddr, lon, lat
+		from storeinfo
+		where sidoname = #{sido} 
+		and gunguname = #{gugun} 
+		and dongname = #{dong}
+	</select>
 </mapper>
 

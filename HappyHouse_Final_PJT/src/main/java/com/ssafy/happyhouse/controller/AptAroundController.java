@@ -16,7 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.happyhouse.dto.EnvirInfoDto;
 import com.ssafy.happyhouse.dto.SidoGugunCodeDto;
-import com.ssafy.happyhouse.service.EnvirInfoService;
+import com.ssafy.happyhouse.dto.StoreInfoDto;
+import com.ssafy.happyhouse.service.AptAroundService;
 import com.ssafy.happyhouse.service.HouseMapService;
 
 import io.swagger.annotations.ApiOperation;
@@ -32,11 +33,19 @@ public class AptAroundController {
 	private static final String FAIL = "fail";
 	
 	@Autowired
-	private EnvirInfoService envirinfoService;
+	private AptAroundService aptaroundService;
 	
 	@ApiOperation(value = "선택한 시구군,동으로 주변환경정보를 반환한다.", response = List.class)
 	@GetMapping(value = "/env/{sidogugun}/{dong}")
 	public List<EnvirInfoDto> getGugunInSido(@PathVariable("sidogugun") String sidogugun,@PathVariable("dong") String dong) throws Exception {
-		return envirinfoService.getEnvirInfo(sidogugun, dong);
+		return aptaroundService.getEnvirInfo(sidogugun, dong);
+	}
+	
+	@ApiOperation(value = "선택한 시,구군,동으로 상가정보를 반환한다.", response = List.class)
+	@GetMapping(value = "/store/{sido}/{gugun}/{dong}")
+	public List<StoreInfoDto> getAllStoreInDong(@PathVariable("sido") String sido,
+			@PathVariable("gugun") String gugun,
+			@PathVariable("dong") String dong) throws Exception {
+		return aptaroundService.getAllStoreInfo(sido, gugun, dong);
 	}
 }
