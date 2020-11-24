@@ -61,7 +61,8 @@ CREATE TABLE `member` (
   `birth_date` date DEFAULT NULL,
   `interest_area` varchar(45) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `marriage_type` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`userid`)
+  `no` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`no`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
