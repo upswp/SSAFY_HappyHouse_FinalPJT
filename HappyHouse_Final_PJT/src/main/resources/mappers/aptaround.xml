@@ -20,5 +20,22 @@
 		and gunguname = #{gugun} 
 		and dongname = #{dong}
 	</select>
+	
+	<!-- 군으로 주변병원 정보조회 -->
+	<select id="selectHospitalByGugun" parameterType="String" resultType="HospitalDto">
+		select name, address, tel
+		from hospital
+		where sido = left(#{sido},2)
+		and gugun = #{gugun};
+	</select>
+	
+	<!-- 군으로 주변 코로나선별진료소 정보조회 -->
+	<select id="selectCoronaClinicByGugun" parameterType="String" resultType="CoronaClinicDto">
+		select hospitalName, address, weekDayOp, satOp, sunOp, tel
+		from coronaclinic
+		where sido = left(#{sido},2)
+		and gungu = #{gugun};
+	</select>
+	
 </mapper>
 

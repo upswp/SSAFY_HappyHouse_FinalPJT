@@ -34,7 +34,6 @@ public class HouseMapController {
 	@ApiOperation(value = "모든 시도를 반환한다.", response = List.class)
 	@GetMapping(value = "/sido")
 	public ResponseEntity<List<SidoGugunCodeDto>> getSido() throws Exception{
-		logger.debug("getSido - 호출");
 		return new ResponseEntity<List<SidoGugunCodeDto>>(housemapService.getSido(),HttpStatus.OK);
 	}
 	

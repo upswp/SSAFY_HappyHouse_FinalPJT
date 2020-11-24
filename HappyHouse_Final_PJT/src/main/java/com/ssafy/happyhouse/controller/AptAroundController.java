@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssafy.happyhouse.dto.CoronaClinicDto;
 import com.ssafy.happyhouse.dto.EnvirInfoDto;
+import com.ssafy.happyhouse.dto.HospitalDto;
 import com.ssafy.happyhouse.dto.SidoGugunCodeDto;
 import com.ssafy.happyhouse.dto.StoreInfoDto;
 import com.ssafy.happyhouse.service.AptAroundService;
@@ -47,5 +49,19 @@ public class AptAroundController {
 			@PathVariable("gugun") String gugun,
 			@PathVariable("dong") String dong) throws Exception {
 		return aptaroundService.getAllStoreInfo(sido, gugun, dong);
+	}
+	
+	@ApiOperation(value = "선택한 시구군,동으로 병원정보를 반환한다.", response = List.class)
+	@GetMapping(value = "/hospital/{sido}/{gugun}")
+	public List<HospitalDto> getAllHospInGugun(@PathVariable("sido") String sido,@PathVariable("gugun") String gugun) throws Exception {
+		return aptaroundService.getAllHospInGugun(sido, gugun);
+	}
+	
+	@ApiOperation(value = "선택한 시구군,동으로 코로나선별진료소정보를 반환한다.", response = List.class)
+	@GetMapping(value = "/coronaclinic/{sido}/{gungu}")
+	public List<CoronaClinicDto> getAllCoronaClinicInGugun(@PathVariable("sido") String sido,@PathVariable("gungu") String gungu) throws Exception {
+
+		logger.debug("getcorona - 호출");
+		return aptaroundService.getAllCoronaClinicInGugun(sido, gungu);
 	}
 }
