@@ -42,4 +42,11 @@ public class NoticeBoardServiceImpl implements NoticeBoardService {
 	public boolean deleteBoard(int no) {
 		return boardMapper.deleteBoard(no) == 1;
 	}
+
+	@Override
+	public boolean countViewsBoard(int no) {
+		return boardMapper.countViewsBoard(no) == 1;
+	}
+
+	
 }

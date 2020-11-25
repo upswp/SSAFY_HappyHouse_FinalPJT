@@ -11,4 +11,5 @@ public interface NoticeBoardService {
 	public boolean writeBoard(NoticeBoardDto board);
 	public boolean updateBoard(NoticeBoardDto board);
 	public boolean deleteBoard(int no);
+	public boolean countViewsBoard(int no);
 }
