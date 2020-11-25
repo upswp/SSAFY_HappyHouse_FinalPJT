@@ -58,6 +58,7 @@ public class NoticeBoardController {
 		logger.debug("detailBoard - 호출");
 		return new ResponseEntity<NoticeBoardDto>(boardService.detailBoard(no), HttpStatus.OK);
 	}
+    
 
     /**
      * 새로운 게시글을 정보를 등록한다. create
@@ -90,6 +91,18 @@ public class NoticeBoardController {
 		}
 		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
 	}
+    
+  /**
+   * 조회수  count
+   * @param views 조회수
+   */
+    @ApiOperation(value = "글번호에 해당하는 views를 카운트를 올린다. 그리고 DB수정 성공여부에 따라 'success' 또는 'fail' 문자열을 반환한다.", response = String.class)
+	@PutMapping("/countViewsBoard/{no}")
+	public void countViewsBoard(@PathVariable int no) {
+		logger.debug("countViewsBoard - 호출");
+		boardService.countViewsBoard(no);
+	}
+    
 
     /**
      * 해당 글 번호에 대한 정보 삭제
