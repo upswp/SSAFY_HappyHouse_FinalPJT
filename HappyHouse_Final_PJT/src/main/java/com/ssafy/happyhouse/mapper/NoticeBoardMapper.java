@@ -13,4 +13,5 @@ public interface NoticeBoardMapper {
 	public int insertBoard(NoticeBoardDto board);
 	public int updateBoard(NoticeBoardDto board);
 	public int deleteBoard(int no);
+	public int countViewsBoard(int no);
 }
