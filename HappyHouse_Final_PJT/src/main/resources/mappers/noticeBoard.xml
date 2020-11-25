@@ -35,6 +35,13 @@
 		   	   content = #{content}
 		 where no = #{no}
 	</update>
+	
+	<!-- 조회수 카운트 -->
+	<update id="countViewsBoard" parameterType="int">
+		update notice_board 
+		   set views = views +1
+		 where no = #{no}
+	</update>
 
 	<!-- 게시글 삭제 -->
 	<delete id="deleteBoard" parameterType="int">
