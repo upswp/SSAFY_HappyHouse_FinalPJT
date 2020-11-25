@@ -14,14 +14,14 @@
 		select left(gugun_code,5) gugunCode, gugun_name gugunName
 		from guguncode
 		where left(gugun_code,2) = #{sidoCode}
-		order by gugunCode;
+		order by gugunName;
 	</select>
 	
 	<select id="selectDong" parameterType="String" resultType="sidoguguncodedto">
 		select right(dongcode,5) dongCode, dong dongName
 		from dongcode
 		where left(dongcode,5) = #{gugunCode}
-		order by dongCode;
+		order by dongName;
 	</select>
 	
 	<select id="selectSidoName" parameterType="String" resultType="String">

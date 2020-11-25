@@ -48,12 +48,14 @@ public class AptAroundController {
 	public List<StoreInfoDto> getAllStoreInDong(@PathVariable("sido") String sido,
 			@PathVariable("gugun") String gugun,
 			@PathVariable("dong") String dong) throws Exception {
+		logger.debug("get상가정보 - 호출");
 		return aptaroundService.getAllStoreInfo(sido, gugun, dong);
 	}
 	
 	@ApiOperation(value = "선택한 시구군,동으로 병원정보를 반환한다.", response = List.class)
 	@GetMapping(value = "/hospital/{sido}/{gugun}")
 	public List<HospitalDto> getAllHospInGugun(@PathVariable("sido") String sido,@PathVariable("gugun") String gugun) throws Exception {
+		logger.debug("gethospital - 호출");
 		return aptaroundService.getAllHospInGugun(sido, gugun);
 	}
 	
