@@ -27,11 +27,11 @@ DROP TABLE IF EXISTS `comment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `comment` (
-  `commentno` int NOT NULL AUTO_INCREMENT,
-  `user_id` varchar(45) NOT NULL,
-  `content` varchar(500) NOT NULL,
-  `created_date` date NOT NULL,
-  PRIMARY KEY (`commentno`)
+  commentno int not null auto_increment primary key, -- 댓글 seq
+  bno int not null, -- 댓글이 달릴 게시글 seq
+  content text not null, -- 댓글 내용
+  writer varchar(20) not null, -- 댓글 작성자
+  reg_date datetime not null-- 댓글 작성 시간
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='댓글 DB';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -72,11 +72,6 @@ CREATE TABLE `member` (
 
 insert into member (userno,userid,username,email,userpwd,address,interest_area,marriage_type,yy,mm,dd)
 values(1,"admin","관리자","superuser@gmail.com","admin","서울","서울","미혼",1993,08,27);
-
-select userno,userid,username,userpwd,email,address,interest_area,marriage_type,no,yy,mm,dd 
-from member
-where userid like '%ssafy%';
-
 
 select * from member;
 --
