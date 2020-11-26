@@ -1,11 +1,15 @@
 package com.ssafy.happyhouse.dto;
 
 public class HospitalDto {
-	
+	/*시도*/
 	private String sido;
+	/*구군*/
 	private String gugun;
+	/*안심병원 이름*/
 	private String name;
+	/*안심병원 도로명주소*/
 	private String address;
+	/*안심병원 전화번호*/
 	private String tel;
 	public String getSido() {
 		return sido;

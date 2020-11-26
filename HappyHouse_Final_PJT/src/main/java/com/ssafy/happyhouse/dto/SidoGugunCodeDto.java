@@ -1,12 +1,17 @@
 package com.ssafy.happyhouse.dto;
 
 public class SidoGugunCodeDto {
-
+	/*시도코드*/
 	private String sidoCode;
+	/*시도이름*/
 	private String sidoName;
+	/*구군코드*/
 	private String gugunCode;
+	/*구군이름*/
 	private String gugunName;
+	/*동코드*/
 	private String dongCode;
+	/*동이름*/
 	private String dongName;
 	
 	public String getSidoCode() {

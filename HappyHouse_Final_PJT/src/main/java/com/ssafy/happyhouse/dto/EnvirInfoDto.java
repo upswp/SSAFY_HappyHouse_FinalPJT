@@ -1,13 +1,21 @@
 package com.ssafy.happyhouse.dto;
 
 public class EnvirInfoDto {
+	/*업체명*/
 	private String name;
+	/*업종코드*/
 	private int scode;
+	/*업종명*/
 	private String sname;
+	/*지도점검일*/
 	private String mchkdate;
+	/*시군구*/
 	private String sigungu;
+	/*지도점검구분*/
 	private String mapgubun;
+	/*지도점검일*/
 	private String chkspec;
+	/*소재지주소*/
 	private String locaddr;
 	public String getName() {
 		return name;

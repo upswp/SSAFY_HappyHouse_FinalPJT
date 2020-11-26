@@ -31,48 +31,56 @@ public class HouseMapController {
 	@Autowired
 	private HouseMapService housemapService;
 
+	// 모든 시도를 반환
 	@ApiOperation(value = "모든 시도를 반환한다.", response = List.class)
 	@GetMapping(value = "/sido")
 	public ResponseEntity<List<SidoGugunCodeDto>> getSido() throws Exception{
 		return new ResponseEntity<List<SidoGugunCodeDto>>(housemapService.getSido(),HttpStatus.OK);
 	}
 	
+	// 선택한 시코드로 구군을 반환
 	@ApiOperation(value = "선택한 시코드로 구군을 반환한다.", response = List.class)
 	@RequestMapping(value = "/sido/{sidoCode}", method = RequestMethod.GET, headers = { "Content-type=application/json" })
 	public List<SidoGugunCodeDto> getGugunInSido(@PathVariable("sidoCode") String sido) throws Exception {
 		return housemapService.getGugunInSido(sido);
 	}
 	
+	// 선택한 구군코드로 동을 반환
 	@ApiOperation(value = "선택한 구군코드로 동을 반환한다.", response = List.class)
 	@RequestMapping(value = "/sido/gugun/{gugunCode}", method = RequestMethod.GET, headers = { "Content-type=application/json" })
 	public List<SidoGugunCodeDto> getDongInGugun(@PathVariable("gugunCode") String gugun) throws Exception {
 		return housemapService.getDongInGugun(gugun);
 	}
 	
+	// 선택한 시코드로 시이름을 반환
 	@ApiOperation(value = "선택한 시코드로 시이름을 반환한다.", response = List.class)
 	@GetMapping(value = "/getSiName/{sidoCode}")
 	public String getSiName(@PathVariable("sidoCode") String sidocode) throws Exception {
 		return housemapService.getSiName(sidocode);
 	}
 	
+	// 선택한 구군코드로 구이름을 반환
 	@ApiOperation(value = "선택한 구군코드로 구이름을 반환한다.", response = List.class)
 	@GetMapping(value = "/getGugunName/{gugunCode}")
 	public String getGugunName(@PathVariable("gugunCode") String guguncode) throws Exception {
 		return housemapService.getGugunName(guguncode);
 	}
 	
+	// 선택한 동코드로 동이름을 반환
 	@ApiOperation(value = "선택한 동코드로 동이름을 반환한다.", response = List.class)
 	@GetMapping(value = "/getDongName/{dongCode}")
 	public String getDongName(@PathVariable("dongCode") String dongcode) throws Exception {
 		return housemapService.getDongName(dongcode);
 	}
 	
+	// 선택한 시이름으로 시코드를 반환
 	@ApiOperation(value = "선택한 시이름으로 시코드를 반환한다.", response = String.class)
 	@GetMapping(value = "/getSiCode/{siName}")
 	public String getSiCode(@PathVariable("siName") String siName) throws Exception {
 		return housemapService.getSiCode(siName);
 	}
 	
+	// 선택한 구군이름으로 구군코드를 반환
 	@ApiOperation(value = "선택한 구군이름으로 구군코드를 반환한다.", response = String.class)
 	@GetMapping(value = "/getGugunCode/{gugunName}/{sidoCode}")
 	public String getGugunCode(@PathVariable("gugunName") String gugunName,@PathVariable("sidoCode") String sidoCode) throws Exception {

@@ -1,21 +1,37 @@
 package com.ssafy.happyhouse.dto;
 
 public class StoreInfoDto { // 상가정보
+	/*상가업소번호*/
 	private int storeno;
+	/*상호명*/
 	private String storename;
+	/*지점명*/
 	private String branchname;//브랜치
+	/*상권업종대분류코드*/
 	private String bigcode;
+	/*상권업종대분류명*/
 	private String bigname;
+	/*상권업종중분류코드*/
 	private String midcode;
+	/*상권업종중분류명*/
 	private String midname;
+	/*상권업종소분류코드*/
 	private String smallcode;
+	/*상권업종소분류명*/
 	private String smallname;
+	/*시도코드*/
 	private String sidocode;
+	/*시도명*/
 	private String sidoname;
+	/*구군코드*/
 	private String gungucode;
+	/*구군명*/
 	private String gunguname;
+	/*동코드*/
 	private String dongcode;
+	/*동명*/
 	private String dongname;
+	/*도로명주소*/
 	private String doroaddr;
 	private double lon; // 경도
 	private double lat; // 위도

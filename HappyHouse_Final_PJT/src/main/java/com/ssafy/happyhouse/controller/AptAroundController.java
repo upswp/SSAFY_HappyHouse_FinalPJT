@@ -28,8 +28,8 @@ import io.swagger.annotations.ApiOperation;
 @RestController
 @RequestMapping("/api/aptaround")
 public class AptAroundController {
-	// 아파트 주변환경정보
-	
+	/* 아파트 주변정보 컨트롤러 */
+ 	
 	private static final Logger logger = LoggerFactory.getLogger(AptAroundController.class);
 	private static final String SUCCESS = "success";
 	private static final String FAIL = "fail";
@@ -37,12 +37,27 @@ public class AptAroundController {
 	@Autowired
 	private AptAroundService aptaroundService;
 	
+	/**
+	 * 선택한 시구군,동으로 주변환경정보를 반환
+	 * @param sidogugun
+	 * @param dong
+	 * @return list
+	 * @throws Exception
+	 */
 	@ApiOperation(value = "선택한 시구군,동으로 주변환경정보를 반환한다.", response = List.class)
 	@GetMapping(value = "/env/{sidogugun}/{dong}")
 	public List<EnvirInfoDto> getGugunInSido(@PathVariable("sidogugun") String sidogugun,@PathVariable("dong") String dong) throws Exception {
 		return aptaroundService.getEnvirInfo(sidogugun, dong);
 	}
 	
+	/**
+	 * 선택한 시,구군,동으로 상가정보를 반환
+	 * @param sido
+	 * @param gugun
+	 * @param dong
+	 * @return list
+	 * @throws Exception
+	 */
 	@ApiOperation(value = "선택한 시,구군,동으로 상가정보를 반환한다.", response = List.class)
 	@GetMapping(value = "/store/{sido}/{gugun}/{dong}")
 	public List<StoreInfoDto> getAllStoreInDong(@PathVariable("sido") String sido,
@@ -52,6 +67,13 @@ public class AptAroundController {
 		return aptaroundService.getAllStoreInfo(sido, gugun, dong);
 	}
 	
+	/**
+	 * 선택한 시구군,동으로 병원정보를 반환
+	 * @param sido
+	 * @param gugun
+	 * @return list
+	 * @throws Exception
+	 */
 	@ApiOperation(value = "선택한 시구군,동으로 병원정보를 반환한다.", response = List.class)
 	@GetMapping(value = "/hospital/{sido}/{gugun}")
 	public List<HospitalDto> getAllHospInGugun(@PathVariable("sido") String sido,@PathVariable("gugun") String gugun) throws Exception {
@@ -59,6 +81,13 @@ public class AptAroundController {
 		return aptaroundService.getAllHospInGugun(sido, gugun);
 	}
 	
+	/**
+	 * 선택한 시구군,동으로 코로나선별진료소정보를 반환
+	 * @param sido
+	 * @param gugun
+	 * @return list
+	 * @throws Exception
+	 */
 	@ApiOperation(value = "선택한 시구군,동으로 코로나선별진료소정보를 반환한다.", response = List.class)
 	@GetMapping(value = "/coronaclinic/{sido}/{gungu}")
 	public List<CoronaClinicDto> getAllCoronaClinicInGugun(@PathVariable("sido") String sido,@PathVariable("gungu") String gungu) throws Exception {
