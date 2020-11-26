@@ -142,7 +142,7 @@ public class MemberController {
 	}
 	/**
 	 * 검색 회원 정보 리스트를 반환한다.
-	 * @param username 검색 회원 이름
+	 * @param userid 검색 회원 아이디
 	 * @return
 	 * @throws Exception
 	 */
