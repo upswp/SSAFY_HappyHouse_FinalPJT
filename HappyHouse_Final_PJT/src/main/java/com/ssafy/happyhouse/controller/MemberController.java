@@ -140,6 +140,18 @@ public class MemberController {
 		logger.debug("retrieveMember - 호출");
 		return new ResponseEntity<List<MemberDto>>(memberService.retrieveMember(), HttpStatus.OK);
 	}
+	/**
+	 * 검색 회원 정보 리스트를 반환한다.
+	 * @param username 검색 회원 이름
+	 * @return
+	 * @throws Exception
+	 */
+	@ApiOperation(value = "검색 회원의 정보를 반환한다.", response = List.class)
+	@GetMapping("/searchMember/{userid}")
+	public ResponseEntity<List<MemberDto>> searchMember(@PathVariable String userid) throws Exception {
+		logger.debug("searchMember - 호출");
+		return new ResponseEntity<List<MemberDto>>(memberService.searchMember(userid), HttpStatus.OK);
+	}
 
 	/**
 	 * 회원 아이디에 대한 상세보기 기능 제공
