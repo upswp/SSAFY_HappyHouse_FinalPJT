@@ -40,4 +40,16 @@
 		from dongcode
 		where right(dongcode,5) = #{selectDong}
 	</select>
+	
+	<select id="selectSiCode" parameterType="String" resultType="String">
+		select left(sido_code,2)
+		from sidocode
+		where sido_name like #{siName};
+	</select>
+	
+	<select id="selectGugunCode" parameterType="String" resultType="String">
+		select left(gugun_code,5)
+		from guguncode
+		where gugun_name like #{gugunName} and left(gugun_code,2)= #{sidoCode} ;
+	</select>
 </mapper>

@@ -15,5 +15,7 @@ public interface HouseMapMapper {
 	public String selectSidoName(String sidocode);
 	public String selectGugunName(String guguncode);
 	public String selectDongName(String dongcode);
+	public String selectSiCode(String siname);
+	public String selectGugunCode(String gugunname,String sidocode);
 	
 }

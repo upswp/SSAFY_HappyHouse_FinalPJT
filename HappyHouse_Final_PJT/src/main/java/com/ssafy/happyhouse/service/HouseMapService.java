@@ -28,5 +28,7 @@ public interface HouseMapService {
 	String getSiName(String sidocode);
 	String getGugunName(String guguncode);
 	String getDongName(String dongcode);
+	String getSiCode(String siName);
+	String getGugunCode(String gugunName, String sidoCode);
 
 }
