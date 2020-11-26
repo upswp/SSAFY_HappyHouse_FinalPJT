@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.ssafy.happyhouse.HappyHouseFinalPjtApplication" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/HappyHouseFinalPjtApplication.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1980" y="113"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.ssafy.happyhouse.ServletInitializer" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/ServletInitializer.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1994" y="368"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.ssafy.happyhouse.config.DatabaseConfig" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/config/DatabaseConfig.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1896" y="630"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.ssafy.happyhouse.config.SwaggerConfig" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/config/SwaggerConfig.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2108" y="648"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.ssafy.happyhouse.controller.QnaBoardController" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/controller/QnaBoardController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1418" y="1396"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.ssafy.happyhouse.controller.NoticeBoardController" 
+    project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/controller/NoticeBoardController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2794" y="1038"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.ssafy.happyhouse.controller.CommentController" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/controller/CommentController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2552" y="1379"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.ssafy.happyhouse.controller.HouseMapController" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/controller/HouseMapController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2381" y="1009"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.ssafy.happyhouse.controller.MemberController" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/controller/MemberController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1563" y="971"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.ssafy.happyhouse.controller.AptAroundController" 
+    project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/controller/AptAroundController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3200" y="1007"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.ssafy.happyhouse.dto.EnvirInfoDto" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/dto/EnvirInfoDto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3915" y="670"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.ssafy.happyhouse.dto.SidoGugunCodeDto" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/dto/SidoGugunCodeDto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4133" y="616"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.ssafy.happyhouse.dto.QnaBoardDto" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/dto/QnaBoardDto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4358" y="652"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.ssafy.happyhouse.dto.StoreInfoDto" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/dto/StoreInfoDto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4591" y="934"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.ssafy.happyhouse.dto.MemberDto" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/dto/MemberDto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4814" y="787"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.ssafy.happyhouse.dto.NoticeBoardDto" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/dto/NoticeBoardDto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5031" y="625"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.ssafy.happyhouse.dto.CommentDto" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/dto/CommentDto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5231" y="598"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.ssafy.happyhouse.dto.CoronaClinicDto" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/dto/CoronaClinicDto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5447" y="697"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.ssafy.happyhouse.dto.HospitalDto" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/dto/HospitalDto.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5664" y="589"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.ssafy.happyhouse.interceptor.JwtInterceptor" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/interceptor/JwtInterceptor.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1146" y="219"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="21" language="java" name="com.ssafy.happyhouse.mapper.HouseMapMapper" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/mapper/HouseMapMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1658" y="3039"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="22" language="java" name="com.ssafy.happyhouse.mapper.CommentMapper" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/mapper/CommentMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1999" y="3018"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="23" language="java" name="com.ssafy.happyhouse.mapper.NoticeBoardMapper" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/mapper/NoticeBoardMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2408" y="3041"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="24" language="java" name="com.ssafy.happyhouse.mapper.AptAroundMapper" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/mapper/AptAroundMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3257" y="2990"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="25" language="java" name="com.ssafy.happyhouse.mapper.MemberMapper" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/mapper/MemberMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1269" y="2843"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="26" language="java" name="com.ssafy.happyhouse.mapper.QnaBoardMapper" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/mapper/QnaBoardMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="902" y="3012"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="27" language="java" name="com.ssafy.happyhouse.service.QnaBoardServiceImpl" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/QnaBoardServiceImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1427" y="1770"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="28" language="java" name="com.ssafy.happyhouse.service.MemberService" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/MemberService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1715" y="2078"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="29" language="java" name="com.ssafy.happyhouse.service.NoticeBoardService" 
+    project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/NoticeBoardService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2676" y="2060"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="30" language="java" name="com.ssafy.happyhouse.service.MemberServiceImpl" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/MemberServiceImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1715" y="1806"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="com.ssafy.happyhouse.service.HouseMapServiceImpl" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/HouseMapServiceImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2045" y="1797"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="32" language="java" name="com.ssafy.happyhouse.service.HouseMapService" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/HouseMapService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2045" y="2078"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="33" language="java" name="com.ssafy.happyhouse.service.JwtService" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/JwtService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1166" y="1779"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="34" language="java" name="com.ssafy.happyhouse.service.AptAroundService" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/AptAroundService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3037" y="2042"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="35" language="java" name="com.ssafy.happyhouse.service.CommentServiceImpl" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/CommentServiceImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2379" y="1761"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="com.ssafy.happyhouse.service.NoticeBoardServiceImpl" 
+    project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/NoticeBoardServiceImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2676" y="1779"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="37" language="java" name="com.ssafy.happyhouse.service.CommentService" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/CommentService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2379" y="2042"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="38" language="java" name="com.ssafy.happyhouse.service.AptAroundServiceImpl" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/AptAroundServiceImpl.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3037" y="1761"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="39" language="java" name="com.ssafy.happyhouse.service.QnaBoardService" project="HappyHouse_Final_PJT" 
+    file="/HappyHouse_Final_PJT/src/main/java/com/ssafy/happyhouse/service/QnaBoardService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1427" y="2051"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <association id="40">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="41" name="jwtInterceptor"/>      
+      <multiplicity id="42" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="43">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="44" name="boardService"/>      
+      <multiplicity id="45" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="46">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="47" name="jwtService"/>      
+      <multiplicity id="48" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="33" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="49">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="50" name="aptaroundService"/>      
+      <multiplicity id="51" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="53" name="housemapService"/>      
+      <multiplicity id="54" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="55">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="37"/>  
+  </realization>  
+  <realization id="56">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="32"/>  
+  </realization>  
+  <association id="57">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="58" name="jwtService"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="33" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="60">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="61" name="mCommentService"/>      
+      <multiplicity id="62" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="37" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="63">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="64" name="sidoguguncodedto"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="66">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="67" name="around"/>      
+      <multiplicity id="68" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="69">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="70" name="mCommentMapper"/>      
+      <multiplicity id="71" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="72">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="73" name="boardMapper"/>      
+      <multiplicity id="74" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="75">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <realization id="76">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="39"/>  
+  </realization>  
+  <realization id="77">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="28"/>  
+  </realization>  
+  <association id="78">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="79" name="memberMapper"/>      
+      <multiplicity id="80" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="81">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="29"/>  
+  </realization>  
+  <association id="82">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="83" name="memberService"/>      
+      <multiplicity id="84" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="85">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="86" name="boardMapper"/>      
+      <multiplicity id="87" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="88">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="89" name="boardService"/>      
+      <multiplicity id="90" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
