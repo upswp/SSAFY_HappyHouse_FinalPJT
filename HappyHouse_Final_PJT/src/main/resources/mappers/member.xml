@@ -22,6 +22,14 @@
 		order by no desc
 	</select>
 
+	<!-- 회원 검색 조회 -->
+	<select id="searchMember" resultType="MemberDto">
+		select
+		userno,userid,username,userpwd,email,address,interest_area,marriage_type,no,yy,mm,dd
+		from member
+		where userid like #{userid};
+	</select>
+
 	<!-- 회원 상세 조회 -->
 	<select id="detailMember" resultType="MemberDto">
 		select
@@ -43,14 +51,17 @@
 	<!-- 회원 수정 -->
 	<update id="updateMember" parameterType="MemberDto">
 		update member
-		set email = #{email},
+		set email =
+		#{email},
 		userpwd = #{userpwd},
 		address = #{address},
 		yy = #{yy},
-		mm = #{mm},
+		mm =
+		#{mm},
 		dd = #{dd},
 		interest_area = #{interest_area},
-		marriage_type = #{marriage_type}
+		marriage_type =
+		#{marriage_type}
 		where no = #{no}
 	</update>
 
@@ -58,7 +69,8 @@
 	<delete id="deleteMember" parameterType="int">
 		delete
 		from member
-		where no = #{no}
+		where
+		no = #{no}
 	</delete>
 
 </mapper>
