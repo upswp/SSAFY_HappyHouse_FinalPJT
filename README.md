@@ -43,4 +43,4 @@ SSAFY_HappyHouse_FinalPJT
 X11 License 라이센스를 준수하며 ``LICENSE``에서 자세한 정보를 확인할 수 있습니다.
 
 ## 시연영상
-<iframe width="640" height="360" src="https://youtu.be/c8U9Y-hTYYk" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+[![Video Label](http://img.youtube.com/vi/c8U9Y-hTYYk/0.jpg)](https://youtu.be/c8U9Y-hTYYk)
