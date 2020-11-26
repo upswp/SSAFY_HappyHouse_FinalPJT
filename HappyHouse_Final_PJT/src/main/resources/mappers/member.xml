@@ -4,6 +4,7 @@
 
 <mapper namespace="com.ssafy.happyhouse.mapper.MemberMapper">
 
+	<!-- 로그인 -->
 	<select id="login" parameterType="MemberDto"
 		resultType="MemberDto">
 		select

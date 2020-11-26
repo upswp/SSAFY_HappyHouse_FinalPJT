@@ -1,6 +1,5 @@
 package com.ssafy.happyhouse.dto;
 
-import java.util.Date;
 
 public class QnaBoardDto {
 	/*QnA 글 no*/
@@ -14,9 +13,11 @@ public class QnaBoardDto {
 	/*QnA 글 댓글 갯수*/
 	private int comment_count;
 	/*QnA 글 등록일*/
-	private Date regtime;
+	private String regtime;
 	/*QnA 댓글 no*/
 	private int  comment_no;
+	
+	
 	
 	public int getNo() {
 		return no;
@@ -48,10 +49,10 @@ public class QnaBoardDto {
 	public void setComment_count(int comment_count) {
 		this.comment_count = comment_count;
 	}
-	public Date getRegtime() {
+	public String getRegtime() {
 		return regtime;
 	}
-	public void setRegtime(Date regtime) {
+	public void setRegtime(String regtime) {
 		this.regtime = regtime;
 	}
 	public int getComment_no() {

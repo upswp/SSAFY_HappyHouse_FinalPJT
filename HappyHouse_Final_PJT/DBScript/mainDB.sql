@@ -103,13 +103,7 @@ CREATE TABLE `notice_board` (
 
 select * from notice_board;
 
-insert into notice_board(
-			title, writer, content, regtime
-		) values (
-			'hello','ssafy' , 'hellohhello', now() 
-		);
-        
-select  * from notice_board;
+
 --
 -- Dumping data for table `notice_board`
 --
@@ -140,7 +134,6 @@ CREATE TABLE `qna_board` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-select * from qna_board;
 
 
 /*!40101 SET character_set_client = @saved_cs_client */;

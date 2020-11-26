@@ -13,6 +13,8 @@ public class NoticeBoardDto {
 	private int views;
 	/*공지사항 글 등록일*/
 	private String regtime;
+	
+	
 	public int getNo() {
 		return no;
 	}

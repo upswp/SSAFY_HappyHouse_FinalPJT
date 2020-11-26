@@ -1,13 +1,17 @@
 package com.ssafy.happyhouse.dto;
 
-import java.util.Date;
 
 public class CommentDto {
+	/*댓글 고유 넘버*/
 	private int commentno;
+	/*댓글 총 갯수*/
     private int bno;
+    /*내용*/
     private String content;
+    /*작성자*/
     private String writer;
-    private Date reg_date;
+    /*작성일자*/
+    private String reg_date;
  
     public int getcommentno() {
         return commentno;
@@ -41,11 +45,11 @@ public class CommentDto {
         this.writer = writer;
     }
  
-    public Date getReg_date() {
+    public String getReg_date() {
         return reg_date;
     }
  
-    public void setReg_date(Date reg_date) {
+    public void setReg_date(String reg_date) {
         this.reg_date = reg_date;
     }
 
