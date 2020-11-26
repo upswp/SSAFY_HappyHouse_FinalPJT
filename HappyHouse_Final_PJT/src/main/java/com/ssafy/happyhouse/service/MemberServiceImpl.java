@@ -55,4 +55,9 @@ public class MemberServiceImpl implements MemberService {
 		return sqlSession.getMapper(MemberMapper.class).deleteMember(no) == 1;
 	}
 
+	@Override
+	public List<MemberDto> searchMember(String userid) throws Exception {
+		return sqlSession.getMapper(MemberMapper.class).searchMember(userid);
+	}
+
 }

@@ -20,4 +20,6 @@ public interface MemberService {
 
 	public boolean deleteMember(int no) throws Exception;
 
+	public List<MemberDto> searchMember(String userid) throws Exception;;
+
 }
