@@ -73,6 +73,9 @@ CREATE TABLE `member` (
 insert into member (userno,userid,username,email,userpwd,address,interest_area,marriage_type,yy,mm,dd)
 values(1,"admin","관리자","superuser@gmail.com","admin","서울","서울","미혼",1993,08,27);
 
+select userno,userid,username,userpwd,email,address,interest_area,marriage_type,no,yy,mm,dd 
+from member
+where userid like '%ssafy%';
 
 
 select * from member;
@@ -103,6 +106,7 @@ CREATE TABLE `notice_board` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+select * from notice_board;
 
 insert into notice_board(
 			title, writer, content, regtime
