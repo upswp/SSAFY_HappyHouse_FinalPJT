@@ -11,17 +11,17 @@ SSAFY_HappyHouse_FinalPJT
 
 |환경|버전|설명|
 |:---:|:---:|:---:|
-|JAVA |zulu8.48.0.49-ca-jdk8.0.262 |---|
-|Vutify |---|---|
-|MySQL|8.0.21|---|
-|mybatis|2.1.3|---|
-|axios|0.21.0|---|
-|core-js|3.6.5|---|
-|vue|2.6.12|---|
-|vue-router|3.2.0|---|
-|vuex|3.4.0|---|
+|JAVA |zulu8.48.0.49-ca-jdk8.0.262 |Backend|
+|Vutify |2.3.19|Front|
+|MySQL|8.0.21|DB|
+|mybatis|2.1.3|Backend|
+|axios|0.21.0|Front|
+|core-js|3.6.5|Front|
+|vue|2.6.12|Front|
+|vue-router|3.2.0|Front|
+|vuex|3.4.0|Front|
 |jjwt|0.9.1|로그인을 위한 jwt사용|
-|swagger|2.9.2|---|
+|swagger|2.9.2|Springboot|
 
 ## 업데이트 내역
 
